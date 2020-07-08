@@ -13,15 +13,13 @@ namespace TemperatureAnalyzer.Components
     {
         private readonly ICOMSettings comSettings;
         private readonly IStorageManager storageManager;
-        private readonly IDataParser dataParser;
         private readonly ILogger<COMListener> logger;
 
-        public COMListener(ICOMSettings comSettings, ILogger<COMListener> logger, IStorageManager storageManager, IDataParser dataParser)
+        public COMListener(ICOMSettings comSettings, ILogger<COMListener> logger, IStorageManager storageManager)
         {
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
             this.comSettings = comSettings ?? throw new ArgumentNullException(nameof(comSettings));
             this.storageManager = storageManager ?? throw new ArgumentNullException(nameof(storageManager));
-            this.dataParser = dataParser ?? throw new ArgumentNullException(nameof(dataParser));
         }
 
         public async Task ListenPortAsync(CancellationToken cancellationToken)
@@ -33,8 +31,7 @@ namespace TemperatureAnalyzer.Components
                     logger.LogInformation(Logs.PortListeningStarted);
                     while (!cancellationToken.IsCancellationRequested)
                     {
-                        var parsedData = dataParser.ParseRawData(serialPort.ReadLine());
-                        await storageManager.StoreDataAsync(parsedData);
+                        await storageManager.StoreDataAsync(serialPort.ReadLine());
                         await Task.Delay(comSettings.ListeningDelay);
                     }
                 }

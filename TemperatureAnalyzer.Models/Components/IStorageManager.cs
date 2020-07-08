@@ -6,10 +6,7 @@ namespace TemperatureAnalyzer.Core.Components
 {
     public interface IStorageManager
     {
-        Task<TemperatureData> GetLatestDataAsync();
-        Task<TemperatureData> GetOldestDataAsync();
-        Task StoreDataAsync(TemperatureData data);
-        Task RemoveDataAsync(TemperatureData data);
+        Task StoreDataAsync(string rawData);
         Task<IEnumerable<TemperatureData>> GetDataAsync();
     }
 }

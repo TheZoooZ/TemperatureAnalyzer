@@ -19,10 +19,12 @@ namespace TemperatureAnalyzer
             var builder = new HostBuilder()
                 .ConfigureServices((hostContext, services) =>
                 {
-                    services.AddScoped<Form1>();
-                    services.AddLogging(configure => configure.AddConsole());
-                    services.AddSingleton<ICOMListener, COMListener>();
-                    services.AddScoped<ITemperatureCalculator, TemperatureCalculator>();
+                    services
+                        .AddScoped<Form1>()
+                        .AddLogging(configure => configure.AddConsole())
+                        .AddSingleton<ICOMListener, COMListener>()
+                        .AddScoped<ITemperatureCalculator, TemperatureCalculator>()
+                        .AddScoped<IStorageManager, StorageManager>();
                 });
             var host = builder.Build();
 

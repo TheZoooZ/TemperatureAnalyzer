@@ -14,7 +14,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		DataStorage.txt = DataStorage.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureAnalyzer.Components.Tests.Unit", "TemperatureAnalyzer.Components.Tests.Unit\TemperatureAnalyzer.Components.Tests.Unit.csproj", "{E680E402-D168-43FF-9813-3DB7369F500B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemperatureAnalyzer.Components.Tests.Unit", "TemperatureAnalyzer.Components.Tests.Unit\TemperatureAnalyzer.Components.Tests.Unit.csproj", "{E680E402-D168-43FF-9813-3DB7369F500B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureAnalyzer.Components.Tests.Integration", "TemperatureAnalyzer.Components.Tests.Ingegration\TemperatureAnalyzer.Components.Tests.Integration.csproj", "{98FB93F8-9C49-4B43-9A4F-20729B78FFF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{E680E402-D168-43FF-9813-3DB7369F500B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E680E402-D168-43FF-9813-3DB7369F500B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E680E402-D168-43FF-9813-3DB7369F500B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98FB93F8-9C49-4B43-9A4F-20729B78FFF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98FB93F8-9C49-4B43-9A4F-20729B78FFF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98FB93F8-9C49-4B43-9A4F-20729B78FFF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98FB93F8-9C49-4B43-9A4F-20729B78FFF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

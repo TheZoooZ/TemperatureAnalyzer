@@ -3,5 +3,6 @@
     public interface IStorageSettings
     {
         string StorageFilePath { get; }
+        int BufferSize { get; }
     }
 }
