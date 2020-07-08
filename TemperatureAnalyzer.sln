@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemperatureAnalyzer", "TemperatureAnalyzer\TemperatureAnalyzer.csproj", "{EE1BE17C-68ED-4FF3-ADFD-BE95BCAECBD0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemperatureAnalyzer.Core", "TemperatureAnalyzer.Models\TemperatureAnalyzer.Core.csproj", "{B10293DC-AC98-4BF8-85AA-B71D21D6DCF1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemperatureAnalyzer.Components", "TemperatureAnalyzer.Components\TemperatureAnalyzer.Components.csproj", "{CD1999E3-269B-4579-9E7A-5F3EAFEA0F7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9888D494-F9F8-4E85-971B-5B944444FE50}"
+	ProjectSection(SolutionItems) = preProject
+		DataStorage.txt = DataStorage.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemperatureAnalyzer.Components.Tests.Unit", "TemperatureAnalyzer.Components.Tests.Unit\TemperatureAnalyzer.Components.Tests.Unit.csproj", "{E680E402-D168-43FF-9813-3DB7369F500B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE1BE17C-68ED-4FF3-ADFD-BE95BCAECBD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE1BE17C-68ED-4FF3-ADFD-BE95BCAECBD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE1BE17C-68ED-4FF3-ADFD-BE95BCAECBD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE1BE17C-68ED-4FF3-ADFD-BE95BCAECBD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B10293DC-AC98-4BF8-85AA-B71D21D6DCF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B10293DC-AC98-4BF8-85AA-B71D21D6DCF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B10293DC-AC98-4BF8-85AA-B71D21D6DCF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B10293DC-AC98-4BF8-85AA-B71D21D6DCF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD1999E3-269B-4579-9E7A-5F3EAFEA0F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD1999E3-269B-4579-9E7A-5F3EAFEA0F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD1999E3-269B-4579-9E7A-5F3EAFEA0F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD1999E3-269B-4579-9E7A-5F3EAFEA0F7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E680E402-D168-43FF-9813-3DB7369F500B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E680E402-D168-43FF-9813-3DB7369F500B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E680E402-D168-43FF-9813-3DB7369F500B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E680E402-D168-43FF-9813-3DB7369F500B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C9CD471-6791-4C97-ACA1-B5F0BE3FF227}
+	EndGlobalSection
+EndGlobal
